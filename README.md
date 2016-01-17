@@ -1,5 +1,7 @@
 # Randi
 
-a simple and small random number generator
+a simple and small random number generator.<br>
+numbers are freshly selected by [random.org](https://www.random.org).
 
-[demo](http://wilbo.github.io/Randi/)
+[launch](http://wilbo.github.io/Randi/)
+
