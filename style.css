@@ -1,0 +1,161 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FF5959;
+  color: #fff;
+ }
+
+a {
+  color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 800;
+	letter-spacing: -5px; 
+}
+
+h1 {
+	font-size: 100px;
+}
+
+p {
+	font-size: 20px;
+}
+
+main {
+	margin-top: 50px;
+}
+
+*::selection { 
+	background-color: rgba(255,255,255,0.5); 
+}
+
+input::selection { 
+	background-color: rgba(0,0,0,0.15); 
+}
+
+.button {
+	padding: 4px 10px;
+	margin: 1px 0 0 4px;
+	box-shadow: inset -1px 1px 4px rgba(0,0,0,0.2);
+	color: #444;
+}
+
+.button:hover {
+		background-color: #eee;
+	}
+.button:active {
+
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.top, .middle, .bottom {
+	max-width: 500px;
+	margin: 50px auto;
+}
+
+.title {
+	position: relative;
+	top: 29px;
+	left: -8px;
+}
+
+#random-form	label {
+	display: inline-block;
+	width: 100px;
+}
+
+#random-form	div {
+	margin-bottom: 3px;
+}
+
+input, 
+textarea {
+	padding: 4px 5px 2px;
+	border-radius: 2px;
+	border: none;
+	box-shadow: inset -1px 1px 4px rgba(0,0,0,0.3);
+	background-color: #fff;
+	color: #444;
+	&:hover {
+		box-shadow: inset -1px 1px 2px rgba(0,0,0,0.3);
+	}
+	&:focus {
+		box-shadow: inset 0px 0px 4px rgba(0,0,0,0.3);
+	}
+}
+
+select {
+  margin-top: 1px;
+  border: 0;
+  background: #fff;
+  border-radius: 2px;
+  height: 25px;
+  width: 165px;
+  padding: 0 5px;
+  color: #444;
+  box-shadow: inset -1px 1px 4px rgba(0,0,0,0.3);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(http://www.techandmath.gr/img/icons/small_down_arrow.gif) 96% / 7% no-repeat #eee;
+}
+/*target Internet Explorer 9 and Internet Explorer 10:*/
+
+@media screen and (min-width: 0\0) {
+  select {
+    background: none;
+    padding: 5px;
+  }
+}
+
+.validation-text,
+#label-result,
+.copy,
+#copy-result,
+#output {
+	display: none;
+}
+
+
+.validation-text {
+	position: relative;
+	top: 2px;
+	color: rgba(255,255,255,0.5);
+}
+
+#label-result {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.copy {
+	margin: 5px 0 0 0;
+}
+
+#copy-result {
+	position: relative;
+	top: 3px;
+}
+
+#output {
+	padding: 10px;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 2px;
+	// font-family: 'Open Sans', sans-serif;
+}
+
+.column {
+	float: left;
+	margin-right: 15px;
+}
+
+#output .column:last-of-type {
+	margin-right: 0;
+}

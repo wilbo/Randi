@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Randi | a fun random number generator!</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='reset.css' />
+    <link rel='stylesheet' href='style.css' />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="clipboard.js"></script>
+    <script src="global.js"></script>
+  </head>
+  <body>
+
+    <!-- top part -->
+    <div class="top">
+      <h1 class="title">Randi</h1>
+      <p class="sub-title">an easy random number generator</p class="sub-title">
+    </div>
+
+    <!-- middle part -->
+    <div class="middle">
+      <form onsubmit="return false;" id="random-form" autocomplete="off">
+        <div>
+          <label for="amount">amount</label> <input type="text" name="amount" value="10" size="6" maxlength="12" class="input" id="amount"> 
+          <span class="validation-text" id="val-amount" >the amount of numbers.</span>
+        </div>
+        <div>
+          <label for="min">min</label> <input type="text" name="min" value="1" size="6" maxlength="12" class="input" id="min">
+          <span class="validation-text" id="val-min" >the lowest number.</span>
+        </div>
+        <div>
+          <label for="max">max</label> <input type="text" name="max" value="999" size="6" maxlength="12" class="input" id="max">  
+          <span class="validation-text" id="val-max" >the highest number</span>
+        </div>
+        <div>
+          <label for="columns">columns</label> <input type="text" name="columns" value="5" size="2" maxlength="2" class="input" id="columns"> 
+          <span class="validation-text" id="val-columns" >the amount of columns.</span>
+        </div>
+        <div>
+          <label for="seed">seed</label> <input type="text" name="seed" value="" size="12" maxlength="12" class="input" id="seed">
+          <span class="validation-text" id="val-seed" >an identifier.</span>
+        </div>
+        <div>
+          <label for="seed">style</label> 
+          <select id="style" class="input">
+            <option value="10">decimal (standard)</option>
+            <option value="2">binary</option>
+            <option value="8">octal</option>
+            <option value="16">hexadecimal</option>
+          </select>
+        </div>
+        <div>
+          <label for=""></label><input type="submit" value="generate!" class="button" id="submit">
+        </div>
+      </form>
+    </div>
+
+    <!-- bottom part -->
+    <div class="bottom">
+      <div class="above-result">
+        <label id="label-result">result: </label>
+      </div>
+      <div>
+        <div class="output clearfix" id="output">
+          <!-- numbers -->
+        </div>
+      </div>
+      <input type="submit" class="button copy" value="copy!" data-clipboard-target="#output">
+      <label id="copy-result"></label>
+    </div>
+
+  </body>
+</html>
