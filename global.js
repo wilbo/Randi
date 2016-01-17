@@ -10,6 +10,7 @@ $(document).ready(function() {
 		$('#output').html('');
 		$('#output').css('display', 'none');
 		$('#label-result').css('display', 'none');
+		$('#copy-result').html('');
 		$('.copy').css('display', 'none');
 
 		// get the input values
@@ -112,8 +113,7 @@ $(document).ready(function() {
 
 		// on succes
 		copyButton.on('success', function(e) {
-	    $('#copy-result').css('display', 'inline-block').hide().fadeIn(250);
-	    $('#copy-result').append('copied!').hide().fadeIn(250);
+	    $('.copy').val('copied!').hide().fadeIn(50);
 	    e.clearSelection();
 		});
 

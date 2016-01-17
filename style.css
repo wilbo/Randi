@@ -1,4 +1,5 @@
 body {
+	padding: 6%;
   font-family: 'Open Sans', sans-serif;
   background-color: #FF5959;
   color: #fff;
@@ -19,10 +20,6 @@ h1 {
 
 p {
 	font-size: 20px;
-}
-
-main {
-	margin-top: 50px;
 }
 
 *::selection { 
@@ -55,12 +52,11 @@ input::selection {
    clear: both;
 }
 
-.top, .middle, .bottom {
-	max-width: 500px;
-	margin: 50px auto;
+.middle, .bottom {
+	margin: 50px 0;
 }
 
-.title {
+.title h1 {
 	position: relative;
 	top: 29px;
 	left: -8px;
@@ -142,20 +138,23 @@ select {
 #copy-result {
 	position: relative;
 	top: 3px;
+	display: none;
 }
 
 #output {
-	padding: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
 	background-color: rgba(255,255,255,0.1);
 	border-radius: 2px;
-	// font-family: 'Open Sans', sans-serif;
 }
 
 .column {
 	float: left;
-	margin-right: 15px;
+	margin: 5px;
+	margin-bottom: 0;
+	margin-left: 0;
 }
 
-#output .column:last-of-type {
-	margin-right: 0;
+.column:last-of-type {
+		margin-right: 5px;
 }

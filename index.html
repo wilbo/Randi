@@ -13,8 +13,10 @@
 
     <!-- top part -->
     <div class="top">
-      <h1 class="title">Randi</h1>
-      <p class="sub-title">a simple and small random number generator</p class="sub-title">
+      <div class="title">
+        <h1>Randi</h1>
+        <p>a simple and small random number generator</p>
+      </div>
     </div>
 
     <!-- middle part -->
@@ -57,16 +59,18 @@
 
     <!-- bottom part -->
     <div class="bottom">
-      <div class="above-result">
-        <label id="label-result">result: </label>
-      </div>
-      <div>
-        <div class="output clearfix" id="output">
-          <!-- numbers -->
+      <div class="result">
+        <div class="result-title">
+          <label id="label-result">result: </label>
         </div>
+        <div>
+          <div class="output clearfix" id="output">
+            <!-- numbers -->
+          </div>
+        </div>
+        <input type="submit" class="button copy" value="copy!" data-clipboard-target="#output">
+        <label id="copy-result"></label>
       </div>
-      <input type="submit" class="button copy" value="copy!" data-clipboard-target="#output">
-      <label id="copy-result"></label>
     </div>
 
   </body>
