@@ -90,7 +90,6 @@ textarea {
 select {
   margin-top: 1px;
   border: 0;
-  background: #fff;
   border-radius: 2px;
   height: 25px;
   width: 165px;
@@ -100,7 +99,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(http://www.techandmath.gr/img/icons/small_down_arrow.gif) 96% / 7% no-repeat #eee;
+  background: url(http://www.techandmath.gr/img/icons/small_down_arrow.gif) 96% / 7% no-repeat #fff;
 }
 /*target Internet Explorer 9 and Internet Explorer 10:*/
 
